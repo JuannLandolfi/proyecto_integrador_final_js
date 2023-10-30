@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landolfi</title>
+    <link rel="icon" href="./multimedia/tecladoIcon.png" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./carrito.css">
+    <script defer src="./carrito.js"></script>
+</head>
+
+
+
+
+<body>
+    <div class="contenedor">
+        <aside>
+            <header>
+                <h1 class="logo">Landolfi</h1>
+            </header>
+            <nav>
+                <ul class="botones_nav">
+                    <li><a class="boton_general boton_carrito" href="./index.html"><i class="bi bi-box-arrow-left"></i> Volver al inicio</a></li>
+                    <li><a class="boton_general boton_carrito" href="./carrito.html"><i class="bi bi-cart4"></i> Carrito <span id="numerito" class="numerito"> 0</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <P id="carrito_vacio" class="texto_carritovacio">Tu carrito de compras está vacío...</P>
+                <div id="carrito-productos" class="contenedor_carrito disabled">
+                    <!--Esto se va a completar con JS -->
+                </div>
+                            
+            <div id="carrito-acciones" class="carrito_acciones disabled">
+                <div class="carrito_acciones_izquierda">
+                    <button id="carrito_acciones_vaciar" class="carrito_acciones_vaciar">Vaciar Carro</button>
+                    </div>
+                    <div class="carrito_acciones_derecha">
+                        <div class="carrito_acciones_total">
+                            <p class="texto_carrito">Total:</p>
+                            <p id="total" class="texto_carrito">Total:</p>
+                            <p class="texto_carrito"></p>
+                        </div>
+                        <button id="carrito_acciones_comprar" class="carrito_acciones_comprar">Comprar Ahora</button>
+                    </div>
+                </div> 
+                <P id="carrito-compra" class="texto_carritovacio disabled">¡Tu compra ha sido realizada con éxito!</P>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <ul class="listaRedesSociales">
+                <img src="./multimedia/facebook-2429746_1280.png" alt="" height="20" width="20">
+                <li><a class="titulosRedSocial" href="">Facebook</a></li>
+                <img src="./multimedia/instagram-1882330_1280.png" alt="" height="20" width="20">
+                <li><a class="titulosRedSocial" href="">Instagram</a></li>
+                <img src="./multimedia/twitter-2430933_1280.png" alt="" height="20" width="20">
+                <li><a class="titulosRedSocial" href="">Twitter</a></li>
+                <p class="titulosContacto">juanshop@gmail.com</p>
+                <p class="titulosContacto">tel: 15 3348 0020</p>    
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

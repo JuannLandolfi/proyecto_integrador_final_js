@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    background-color: black;
+    }
+
+header{
+    height: 400px;
+    margin-top: -750px;
+    background-image: url(./multimedia/img_fondonav2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin-top: 748px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.botones_nav{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 22px;
+    background-color: black;
+}
+
+.boton_nav.active{
+    background-color: red;
+    color: yellow;
+}
+
+
+
+.boton_general{
+    padding: 6px;
+    font-size: 22px;
+    border: 0;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.boton_carrito{
+    color: white;
+    text-decoration: none;
+}
+
+.numerito{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+
+main{
+    height: 100%;
+    margin-top: -50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.titulo_principal{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 33px;
+}
+
+.contenedor_productos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-radius: 1rem;
+    height: 1700px;
+}
+
+.producto_imagen{
+    border-radius: 1rem;
+
+}
+
+
+.producto_detalle{
+    height: 85px;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.producto_boton{
+    border: 1px;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+
+
+footer{
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.listaRedesSociales{
+    display: flex;
+    gap: 20px;
+}
+
+.titulosRedSocial{
+    text-decoration: none;
+    color: white;
+}
+
+.titulosContacto{
+    margin-left: 250px;
+    color: white;
+}
+
