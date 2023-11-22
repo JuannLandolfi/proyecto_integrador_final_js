@@ -1,0 +1,82 @@
+[
+{
+    "id": "monitor-gdr",
+    "titulo": "Monitor GDR",
+    "imagen": "./multimedia/img_monitor1.jpg",
+    "categoria": {
+        "nombre": "Monitores",
+        "id": "monitores"
+    },
+    "precio": 56000,
+    "detalles": {
+        "descripcion": "El monitor GDR es el más comprado de nuestro comercio, tanto por su precio economico, como por la calidad de su pantalla",
+        "caracteristicas": [
+            "Pantalla led de 24 pulgadas",
+            "Resolucion de colores adaptable a videojuegos",
+            "Garantia de 6 meses",
+            "Relación de contraste: 1,000: 1 Tiempo de respuesta de 5 ms"
+        ]
+    }
+},
+
+{
+    "id": "teclado-gammer",
+    "titulo": "Teclado Gammer",
+    "imagen": "./multimedia/img_teclado1.jpg",
+    "categoria": { 
+        "nombre": "Teclados",
+        "id": "teclados"
+    },
+    "precio": 48500,
+    "detalles": {
+        "descripcion": "El teclado Gammer tiene teclas cilindricas para mayor comodidad ¿Que esperas para comprarlo?",
+        "caracteristicas": [
+            "Consola compatible: PS5",
+            "Tipo de teclado: mecánico.",
+            "Garantia de 10 meses",
+            "Con cable removible."
+        ]
+    }
+
+},
+
+{
+    "id": "mouse-u2",
+    "titulo": "Mouse U2",
+    "imagen": "./multimedia/img_mouse1.jpg",
+    "categoria": {
+        "nombre": "Mouses",
+        "id": "mouses"
+},
+    "precio": 22700,
+    "detalles": {
+    "descripcion": "El Mouse U2 a diferencia del U1, adiquirio luces para mejor la experiencia de uso (utiliza cable)",
+    "caracteristicas": [
+        "Posee rueda de desplazamiento.",
+        "Con sensor óptico.",
+        "Garantia de 6 meses",
+        "Resolución de 16000dpi"
+    ]
+}
+},
+
+{
+    "id": "monitor-dd",
+    "titulo": "Monitor DD",
+    "imagen": "./multimedia/img_monitor2.jpg",
+    "categoria": { 
+    "nombre": "Monitores",
+    "id": "monitores"
+},
+    "precio": 61000,
+    "detalles": {
+    "descripcion": "El monitor DD es el escencial para la escena del streaming, gracias a su estilo curvo, aprovecha al maximo su potencial",
+    "caracteristicas": [
+        "Pantalla led de 32 pulgadas",
+        "Posee pantalla antirreflejo",
+        "Garantia de 12 meses",
+        "Altavoces incluidos"
+    ]
+}
+}
+]
