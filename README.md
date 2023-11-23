@@ -7,7 +7,7 @@ Descripción del Proyecto
 Este proyecto es un e-commerce que permite a los usuarios explorar y comprar productos en línea. La aplicación utiliza tecnologías web como JavaScript para interactuar con una API y proporcionar una experiencia de compra.
 
 Características Clave
-1.Catálogo de Productos: La tienda en línea ofrece una amplia gama de productos, desde micrófonos y auriculares hasta parlantes, organizados en diferentes categorías.
+1.Catálogo de Productos: La tienda en línea ofrece una amplia gama de productos, desde Teclados y Mouses hasta Monitores, organizados en diferentes categorías.
 
 2.Filtrado por Categoría: Los usuarios pueden explorar productos por categoría, lo que facilita la búsqueda de artículos específicos.
 
