@@ -104,6 +104,11 @@ main{
     color: white;
 }
 
+.texto_carritovacio{
+    margin-top: 300px;
+    font-size: 30px;
+}
+
 .carrito_producto_eliminar{
     border: 0;
     font-size: 20px;
@@ -115,7 +120,6 @@ main{
 }
 
 .carrito_acciones_vaciar{
-    margin-top: 50px;
     border: 0;
     font-size: 28px;
     border-radius: 1rem;
@@ -131,7 +135,6 @@ main{
     height: 100px;
     text-align: center;
     font-size: 22px;
-    margin-top: 20px;
 }
 
 .carrito_acciones_comprar{
@@ -180,24 +183,81 @@ footer{
         height: 200px;
     }
 
+    main{
+        height: 1600px;
+    }
+
     .contenedor_carrito{
         margin-top: 90px;
         display: flex;
         flex-direction: column;
         gap: 9px;
-            height: 100px;
         background-color: black;
     }    
 
     .carrito_producto{
-        margin-left: 100px;
-        margin-right: 100px;
         border: 1px solid rgb(255, 255, 255);
         display: flex;
-        justify-content: space-between;
-        gap: 80px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
         align-items: center;
         border-radius: 1rem;
         background-color: black;
-    }    
+    }   
+
+
+    .carrito_producto_eliminar{
+        font-size: 20px;
+        width: 223px;
+        height: 25px;
+        border-radius: 1rem;
+        color: red;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    .carrito_acciones{
+        display: flex;
+    height: 60px;
+    width: 60px;
+    }
+
+    .carrito_acciones_izquierda{
+        margin-top: 1550px;
+    }
+    .carrito_acciones_derecha{
+        margin-top: 1525px;
+        margin-left: 30px;
+    }
+
+
+
+    footer{
+        height: 40px;
+    }
+    
+    .div_footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .listaRedesSociales{
+        margin-left: 150px;
+        display: flex;
+        justify-content: space-around;
+        width: 100px;
+        font-size: 8px;
+    }
+    
+    .titulosRedSocial{
+        font-size: 8px;
+    }
+    
+    .titulosContacto{
+        display: none;
+    }
+
 }

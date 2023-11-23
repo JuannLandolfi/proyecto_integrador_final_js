@@ -35,8 +35,8 @@ header{
 }
 
 .boton_nav.active{
-    background-color: red;
-    color: yellow;
+    background-color: rgb(117, 54, 136);
+    color: rgb(255, 255, 255);
 }
 
 
