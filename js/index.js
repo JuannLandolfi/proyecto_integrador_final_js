@@ -36,7 +36,7 @@ function cargarProductos(productosArray) {
         <img  class="producto_imagen" src="${producto.imagen}" height="250" width="250" alt="${producto.titulo}">
         <div class="producto_detalle">
             <h3 class="producto_titulos">${producto.titulo}</h3>
-            <p class="producto_precio">${producto.precio}</p>
+            <p class="producto_precio">$${formatoPrecio(producto.precio)}</p>
             <button class="producto_boton" id="${producto.id}">Agregar al carrito</button>
             <button class="producto_detail" id="${producto.id}">Detalles</button>
         </div>
@@ -58,6 +58,11 @@ function cargarProductos(productosArray) {
 
 }
 
+// Función para formatear el precio con separador de miles.
+function formatoPrecio(precio) {
+    return precio.toLocaleString('es-AR');
+}
+
 cargarProductos(productosArray);
 
 
@@ -72,7 +77,7 @@ botonesNav.forEach(boton => {
         const productosBoton = productosArray.filter(producto => producto.categoria.id === e.currentTarget.id);
         cargarProductos(productosBoton); 
     } else {
-        tituloPrincipal.textContent = "Todos los productos";
+        tituloPrincipal.textContent = "Todos los productos:";
         cargarProductos(productosArray);
     }
     });
@@ -130,13 +135,26 @@ function actualizarNumerito() {
 // Función para mostrar detalles de un producto en una ventana emergente.
 function mostrarDetallesProducto(producto) {
     const ventanaDetalles = window.open('', 'ventanaDetalles');
-    
-    ventanaDetalles.document.write(`
+
+// Almacena los detalles del producto en el Local Storage
+localStorage.setItem('productoDetalles', JSON.stringify(producto));
+
+
+// Función para obtener los detalles del producto del Local Storage
+function obtenerDetallesAlmacenados() {
+    const detallesAlmacenados = localStorage.getItem('productoDetalles');
+    return detallesAlmacenados ? JSON.parse(detallesAlmacenados) : null;
+}
+
+
+
+    const html= `
         <html>
         <head>
             <title>Detalles del Producto</title>
-            <link rel="stylesheet" href="./css/detalles.css">
+            <link rel="icon" href="./multimedia/tecladoIcon.png" >
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+            <link rel="stylesheet" href="./css/detalles.css">
         </head>
         <body>
             <div class="contenedor">
@@ -145,25 +163,59 @@ function mostrarDetallesProducto(producto) {
                         <h1 class="logo">Landolfi</h1>
                     </header>
                     <nav>
-                    <a class="boton_general boton_carrito" href="./index.html"><i class="bi bi-box-arrow-left"></i> Volver al inicio</a>
+                    <a class="boton_general boton_volver" href="./index.html"><i class="bi bi-box-arrow-left"></i> Volver al inicio</a>
                     </nav>
                     <div class="tarjeta_detalle">
+                    <div class="contenedor_detalle">
+                    <div class="div_subtitulo">
                     <h1 class="subtitulo">Detalles del producto</h1>
-                    <h3 class="producto_titulo">${producto.titulo}</h3>
+                    </div>
                     <img class="producto_imagen" src="${producto.imagen}" alt="${producto.titulo}">
-                    <p>Precio: ${producto.precio}</p>
-                    <p>Descripción: ${producto.detalles.descripcion}</p>
-                    <p>Características:</p>
-                        <ul>
+                    <h3 class="producto_titulo">${producto.titulo}.</h3>
+                    <h3 class="producto_titulo">Precio: $${formatoPrecio(producto.precio)}.</h3>
+                    <p class="textos_detalle">Descripción: ${producto.detalles.descripcion}.</p>
+                    <p class="textos_detalle">Características:</p>
+                        <ul class="textos_detalle">
                             ${producto.detalles.caracteristicas.map(caracteristica => `<li>${caracteristica}</li>`).join('')}
                         </ul>
                     </div>
+                    </div>
                 </aside>
             </div>
+            <footer>
+            <div class="div_footer">
+                <ul class="listaRedesSociales">
+                    <img src="./multimedia/facebook-2429746_1280.png" alt="" height="20" width="20">
+                    <li><a class="titulosRedSocial" href="">Facebook</a></li>
+                    <img src="./multimedia/instagram-1882330_1280.png" alt="" height="20" width="20">
+                    <li><a class="titulosRedSocial" href="">Instagram</a></li>
+                    <img src="./multimedia/twitter-2430933_1280.png" alt="" height="20" width="20">
+                    <li><a class="titulosRedSocial" href="">Twitter</a></li>
+                </ul>
+                <div class="titulosContacto">
+                <p>juanshop@gmail.com</p>
+                <p>tel: 15 3348 0020</p>
+                </div>
+            </div>
+        </footer>    
         </body>
         </html>
-    `);
-}
+    `;
+
+
+    // Asigné el contenido al documento de la ventana emergente
+    ventanaDetalles.document.open();
+    ventanaDetalles.document.write(html);
+    ventanaDetalles.document.close();
+
+
+     // Agregué un controlador de eventos al botón "Volver al inicio"
+    const botonVolver = ventanaDetalles.document.querySelector(".boton_volver");
+    botonVolver.addEventListener("click", () => {
+        // codigo para cerrar la ventana
+        ventanaDetalles.close();
+    });
+    }
 
 
 

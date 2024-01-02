@@ -4,17 +4,17 @@
     "titulo": "Monitor GDR",
     "imagen": "./multimedia/img_monitor1.jpg",
     "categoria": {
-        "nombre": "Monitores",
+        "nombre": "Monitores:",
         "id": "monitores"
     },
     "precio": 56000,
     "detalles": {
         "descripcion": "El monitor GDR es el más comprado de nuestro comercio, tanto por su precio economico, como por la calidad de su pantalla",
         "caracteristicas": [
-            "Pantalla led de 24 pulgadas",
-            "Resolucion de colores adaptable a videojuegos",
-            "Garantia de 6 meses",
-            "Relación de contraste: 1,000: 1 Tiempo de respuesta de 5 ms"
+            "Pantalla led de 24 pulgadas.",
+            "Resolucion de colores adaptable a videojuegos.",
+            "Garantia de 6 meses.",
+            "Relación de contraste: 1,000: 1 Tiempo de respuesta de 5 ms."
         ]
     }
 },
@@ -24,16 +24,16 @@
     "titulo": "Teclado Gammer",
     "imagen": "./multimedia/img_teclado1.jpg",
     "categoria": { 
-        "nombre": "Teclados",
+        "nombre": "Teclados:",
         "id": "teclados"
     },
     "precio": 48500,
     "detalles": {
         "descripcion": "El teclado Gammer tiene teclas cilindricas para mayor comodidad ¿Que esperas para comprarlo?",
         "caracteristicas": [
-            "Consola compatible: PS5",
+            "Consola compatible: PS5.",
             "Tipo de teclado: mecánico.",
-            "Garantia de 10 meses",
+            "Garantia de 10 meses.",
             "Con cable removible."
         ]
     }
@@ -45,17 +45,17 @@
     "titulo": "Mouse U2",
     "imagen": "./multimedia/img_mouse1.jpg",
     "categoria": {
-        "nombre": "Mouses",
+        "nombre": "Mouses:",
         "id": "mouses"
 },
-    "precio": 22700,
+    "precio": 24900,
     "detalles": {
     "descripcion": "El Mouse U2 a diferencia del U1, adiquirio luces para mejor la experiencia de uso (utiliza cable)",
     "caracteristicas": [
         "Posee rueda de desplazamiento.",
         "Con sensor óptico.",
-        "Garantia de 6 meses",
-        "Resolución de 16000dpi"
+        "Garantia de 6 meses.",
+        "Resolución de 16000dpi."
     ]
 }
 },
@@ -65,18 +65,118 @@
     "titulo": "Monitor DD",
     "imagen": "./multimedia/img_monitor2.jpg",
     "categoria": { 
-    "nombre": "Monitores",
+    "nombre": "Monitores:",
     "id": "monitores"
 },
     "precio": 61000,
     "detalles": {
     "descripcion": "El monitor DD es el escencial para la escena del streaming, gracias a su estilo curvo, aprovecha al maximo su potencial",
     "caracteristicas": [
-        "Pantalla led de 32 pulgadas",
-        "Posee pantalla antirreflejo",
-        "Garantia de 12 meses",
-        "Altavoces incluidos"
+        "Pantalla led de 32 pulgadas.",
+        "Posee pantalla antirreflejo.",
+        "Garantia de 12 meses.",
+        "Altavoces incluidos."
     ]
 }
+},
+
+{
+    "id": "monitor-p3",
+    "titulo": "Monitor P3",
+    "imagen": "./multimedia/img_monitor3.jpg",
+    "categoria": {
+        "nombre": "Monitores:",
+        "id": "monitores"
+    },
+    "precio": 58000,
+    "detalles": {
+        "descripcion": "El monitor P3 ofrece un rendimiento perfecto ante su precio y su tamaño, rompiendo el record de duración de uso",
+        "caracteristicas": [
+            "Altavoces incluidos.",
+            "Diseño sin marco.",
+            "Garantia de 10 meses.",
+            "Pantalla led de 27 pulgadas."
+        ]
+    }
+},
+
+{
+    "id": "teclado-jal",
+    "titulo": "Teclado JAL",
+    "imagen": "./multimedia/img_teclado2.jpg",
+    "categoria": {
+        "nombre": "Teclados:",
+        "id": "teclados"
+    },
+    "precio": 33650,
+    "detalles": {
+        "descripcion": "El teclado JAL, es el primer teclado gammer para uso de una sola mano, ¿Que esperas para probarlo?",
+        "caracteristicas": [
+            "Switches mecánicos de respuesta rápida.",
+            "Diseño ergonómico y reposamuñecas.",
+            "Conectividad inalámbrica.",
+            "Soporte para software de personalización."
+        ]
+    }
+},
+
+{
+    "id": "teclado-um7",
+    "titulo": "Teclado UM7",
+    "imagen": "./multimedia/img_teclado3.jpg",
+    "categoria": {
+        "nombre": "Teclados:",
+        "id": "teclados"
+    },
+    "precio": 52300,
+    "detalles": {
+        "descripcion": "El teclado UM7 tiene un agarre especial es sus teclas mecanicas que hacen sentir una satisfaccion y efeciciencia perfecta para su uso en videjuegos",
+        "caracteristicas": [
+            "Retroiluminación RGB personalizable.",
+            "Teclas programables y macros.",
+            "Teclas texturizadas.",
+            "Conexión magnética desmontable."
+        ]
+    }
+},
+
+{
+    "id": "mouse-u1",
+    "titulo": "Mouse U1",
+    "imagen": "./multimedia/img_mouse3.jpg",
+    "categoria": {
+        "nombre": "Mouses:",
+        "id": "mouses"
+    },
+    "precio": 17100,
+    "detalles": {
+        "descripcion": "El mouse U1 es el mas economico de nuestro mercado, pero uno de los mas vendidos al mismo tiempo, para iniciar con un mouse gammer, ¡Este es el indicado!",
+        "caracteristicas": [
+            "Sensor de alta precisión.",
+            "Iluminación RGB dinámica.",
+            "Botones programables y macros.",
+            "Diseño ergonómico y personalizable."
+        ]
+    }
+},
+
+{
+    "id": "mouse-L2",
+    "titulo": "Mouse L2",
+    "imagen": "./multimedia/img_mouse2.png",
+    "categoria": {
+        "nombre": "Mouses:",
+        "id": "mouses"
+    },
+    "precio": 22800,
+    "detalles": {
+        "descripcion": "El mouse L2 compite con los de calidad premium y sin rozar sus precios, ¡Una vez comprado no lo cambiaras por ninguno!",
+        "caracteristicas": [
+            "Revestimiento antideslizante.",
+            "Rueda de desplazamiento magnética.",
+            "Conectividad inalámbrica de baja latencia.",
+            "Memoria interna para perfiles."
+        ]
+    }
 }
 ]
