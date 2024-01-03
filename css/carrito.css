@@ -257,6 +257,7 @@ footer{
     display: flex;
     justify-content: space-around;
     height: 24px;
+    width: 1300px;
 }
 
 .listaRedesSociales{
@@ -278,7 +279,6 @@ footer{
     display: flex;
     justify-content: space-around;
     color: white;
-    margin-left: 460px;
 }
 
 
