@@ -58,6 +58,48 @@ function cargarProductos(productosArray) {
 
 }
 
+// Función para mostrar notificación Toastify
+function mostrarNotificacion() {
+    Toastify({
+        text: '¡Agregado al carrito con éxito!',
+        duration: 3000,
+        gravity: 'top',
+        close: false,
+        backgroundColor: '#753688'
+    }).showToast();
+}
+
+// Función para agregar producto al carrito
+function agregarAlCarrito(e) {
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productosArray.find(producto => producto.id === idBoton);
+
+    if (productosEnCarrito.some(producto => producto.id === idBoton)) {
+        const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+        productosEnCarrito[index].cantidad++;
+    } else {
+        productoAgregado.cantidad = 1;
+        productosEnCarrito.push(productoAgregado);
+    }
+
+    actualizarNumerito();
+    localStorage.setItem("productos_en_carrito", JSON.stringify(productosEnCarrito));
+
+    // Muestra la notificación al agregar al carrito
+    mostrarNotificacion();
+}
+
+// Función para actualizar botones de agregar al carrito
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto_boton");
+    
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
+}
+
+// ... (resto del código)
+
 // Función para formatear el precio con separador de miles.
 function formatoPrecio(precio) {
     return precio.toLocaleString('es-AR');
@@ -107,7 +149,7 @@ if (productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
-function agregarAlCarrito(e) {
+function agregarAlCarritoSinNotificacion(e) {
     const idBoton = e.currentTarget.id;
     const productoAgregado = productosArray.find(producto => producto.id === idBoton);
 
@@ -216,7 +258,6 @@ function obtenerDetallesAlmacenados() {
         ventanaDetalles.close();
     });
     }
-
 
 
 

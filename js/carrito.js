@@ -41,15 +41,15 @@ function cargarProductosCarrito() {
         </div>
         <div class="carrito_producto_cantidad">
             <small class="texto_carrito">Cantidad</small>
-            <p class="texto_carrito">${producto.cantidad}</p>
+            <h3 class="texto_carrito">${producto.cantidad}</h3>
         </div>
             <div class="carrito_producto_precio">
                 <small class="texto_carrito">Precio</small>
-                <p class="texto_carrito"> $${formatoPrecio(producto.precio)}</p>
+                <h3 class="texto_carrito"> $${formatoPrecio(producto.precio)}</h3>
             </div>
                 <div class="carrito_producto_subtotal">
                     <small class="texto_carrito">Subtotal</small>
-                    <p class="texto_carrito"> $${formatoPrecio(producto.precio * producto.cantidad)}</p>
+                    <h3 class="texto_carrito"> $${formatoPrecio(producto.precio * producto.cantidad)}</h3>
                 </div>
                 <div class="div_button_eliminar">
                 <button class="carrito_producto_eliminar" id="${producto.id}"><i class="bi bi-trash3"></i></button>

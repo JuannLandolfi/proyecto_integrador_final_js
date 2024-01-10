@@ -125,37 +125,49 @@ main{
 
 .producto_imagen{
     border-radius: 1rem;
-    border: 3px solid rgb(117, 54, 136);
+    border: 4px solid rgb(117, 54, 136);
 }
 
 
 .producto_detalle{
     border: 4px solid rgb(117, 54, 136);
-    height: 129.3px;
+    height: 135px;
     width: 250px;
     background-color: white;
     border-radius: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 9px;
 }
 
 .producto_boton{
     border: 1px;
     padding: 6px;
-    border-radius: 7px;
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(117, 54, 136);
+    color: white;
     cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
+}
+.producto_boton:hover{
+    background-color: rgb(171, 89, 196);
 }
 
 .producto_detail{
     border: 1px;
     padding: 6px;
-    border-radius: 7px;
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(117, 54, 136);
+    color: white;
     cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
 }
+.producto_detail:hover{
+    background-color: rgb(171, 89, 196);
+}
+
 
 
 
@@ -200,56 +212,99 @@ footer{
 
 
 
-/* MEDIA QUERIES */
+/* Adaptación a dispositivos moviles */
 
-@media (max-width: 425px) {
+@media (max-width: 425px)   {
 
-    header{
-        height: 200px;
-        background-image: url(../multimedia/img_fondonav1\(nuevo\).jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-
-    aside{
-        height: 340px;
+    .body{
+        width: 425px;
     }
 
+    .contenedor{
+        width: 425px;
+        padding: 0;
+        margin: 0;
+    }
 
-    .botones_nav{
-        height: 35px;
+    .logo{
+        font-size: 50px;
+    }
+
+    .header{
+        width: 425px;
     }
 
     .boton_general{
-    font-size: 10px;
+        font-size: 12px;
     }
 
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-titulo{
+        width: 200px;
+    }
+
+    .titulo_principal{
+        font-size: 15px;
+    }
+
+    .producto_imagen{
+        height: 200px;
+        width: 200px;
+    }
+
+    .producto_detalle{
+        width: 200px;
+    }
+
+    .producto_boton{
+        width: 150px;
+    }
+    .producto_detail{
+        width: 150px;
+    }
+
+    .contenedor_productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10;
+    margin: 0;
+    width: 410px;
+    }
 
     footer{
-        height: 40px;
+        width: 425px;
     }
-    
     .div_footer{
+        padding: 1px;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        gap: 6px;
+        height: 40px;
+        width: 410px;
     }
-
-
     .listaRedesSociales{
         display: flex;
-        justify-content: space-around;
-        width: 100px;
-        font-size: 8px;
+        justify-content: center;
+        width: 410px;
+        gap: 19px;
     }
-    
-    .titulosRedSocial{
-        font-size: 8px;
-    }
-    
-    .titulosContacto{
-        display: none;
-    }
-    
 }
 
+
+
+/* Adaptación a dispositivos tablets */
+
+@media (min-width: 768px) and (max-width: 1024px)   {
+
+    .boton_general{
+        font-size: 24px;
+    }
+}
