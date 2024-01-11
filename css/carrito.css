@@ -200,8 +200,8 @@ main{
 
 
 .carrito_acciones{
-    border: 3px solid white;
-    background-color: rgb(117, 54, 136);
+    border: 4px solid rgb(117, 54, 136);
+    background-color: white;
     height: 210px;
     width: 200px;
     display: flex;
@@ -213,18 +213,18 @@ main{
 
 
 .carrito_acciones_vaciar{
-    border: 4px solid white;
+    border: 3px solid rgb(117, 54, 136);
     font-size: 18px;
     border-radius: 1rem;
     padding: 5px;
     cursor: pointer;
-    color: red;
-    background-color: white;
+    color: white;
+    background-color: rgb(117, 54, 136);
 }
 
 
 .carrito_acciones_comprar{
-    border: 4px solid white;
+    border: 4px solid rgb(117, 54, 136);
     font-size: 20px;
     padding: 5px;
     border-radius: 1rem;
@@ -236,7 +236,7 @@ main{
 
 .texto-carrito-acciones{
     font-size: 22px;
-    color: white;
+    color: rgb(117, 54, 136);
 }
 
 
